@@ -1,0 +1,36 @@
+﻿  Compiling CUDA source file main.cu...
+  Compiling CUDA source file filter.cu...
+  
+  C:\Users\clhughes\Desktop\ParallelImageFiltering\ParallelImageFiltering>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64" -x cu   -IH:\opencv\build\include -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include"  -G   --keep-dir x64\Debug  -maxrregcount=0  --machine 64 --compile -cudart static  -g  -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc142.pdb /FS /Zi /RTC1 /MDd " -o C:\Users\clhughes\Desktop\ParallelImageFiltering\ParallelImageFiltering\x64\Debug\main.cu.obj "C:\Users\clhughes\Desktop\ParallelImageFiltering\ParallelImageFiltering\main.cu" 
+  
+  C:\Users\clhughes\Desktop\ParallelImageFiltering\ParallelImageFiltering>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64" -x cu   -IH:\opencv\build\include -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include"  -G   --keep-dir x64\Debug  -maxrregcount=0  --machine 64 --compile -cudart static  -g  -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc142.pdb /FS /Zi /RTC1 /MDd " -o C:\Users\clhughes\Desktop\ParallelImageFiltering\ParallelImageFiltering\x64\Debug\filter.cu.obj "C:\Users\clhughes\Desktop\ParallelImageFiltering\ParallelImageFiltering\filter.cu" 
+  filter.cu
+H:\opencv\build\include\opencv2/stitching/detail/warpers.hpp(235): warning #611-D: overloaded virtual function "cv::detail::PlaneWarper::buildMaps" is only partially overridden in class "cv::detail::AffineWarper"
+  
+H:\opencv\build\include\opencv2/stitching/detail/warpers.hpp(235): warning #611-D: overloaded virtual function "cv::detail::PlaneWarper::warp" is only partially overridden in class "cv::detail::AffineWarper"
+  
+H:\opencv\build\include\opencv2/stitching/detail/matchers.hpp(182): warning #611-D: overloaded virtual function "cv::detail::FeaturesMatcher::match" is only partially overridden in class "cv::detail::BestOf2NearestMatcher"
+  
+H:\opencv\build\include\opencv2/stitching/detail/matchers.hpp(236): warning #611-D: overloaded virtual function "cv::detail::FeaturesMatcher::match" is only partially overridden in class "cv::detail::AffineBestOf2NearestMatcher"
+  
+H:\opencv\build\include\opencv2/stitching/detail/blenders.hpp(100): warning #611-D: overloaded virtual function "cv::detail::Blender::prepare" is only partially overridden in class "cv::detail::FeatherBlender"
+  
+H:\opencv\build\include\opencv2/stitching/detail/blenders.hpp(127): warning #611-D: overloaded virtual function "cv::detail::Blender::prepare" is only partially overridden in class "cv::detail::MultiBandBlender"
+  
+H:\opencv\build\include\opencv2/stitching/detail/warpers.hpp(235): warning #611-D: overloaded virtual function "cv::detail::PlaneWarper::buildMaps" is only partially overridden in class "cv::detail::AffineWarper"
+  
+H:\opencv\build\include\opencv2/stitching/detail/warpers.hpp(235): warning #611-D: overloaded virtual function "cv::detail::PlaneWarper::warp" is only partially overridden in class "cv::detail::AffineWarper"
+  
+H:\opencv\build\include\opencv2/stitching/detail/matchers.hpp(182): warning #611-D: overloaded virtual function "cv::detail::FeaturesMatcher::match" is only partially overridden in class "cv::detail::BestOf2NearestMatcher"
+  
+H:\opencv\build\include\opencv2/stitching/detail/matchers.hpp(236): warning #611-D: overloaded virtual function "cv::detail::FeaturesMatcher::match" is only partially overridden in class "cv::detail::AffineBestOf2NearestMatcher"
+  
+H:\opencv\build\include\opencv2/stitching/detail/blenders.hpp(100): warning #611-D: overloaded virtual function "cv::detail::Blender::prepare" is only partially overridden in class "cv::detail::FeatherBlender"
+  
+H:\opencv\build\include\opencv2/stitching/detail/blenders.hpp(127): warning #611-D: overloaded virtual function "cv::detail::Blender::prepare" is only partially overridden in class "cv::detail::MultiBandBlender"
+  
+  main.cu
+  image_utils.cpp
+     Creating library C:\Users\clhughes\Desktop\ParallelImageFiltering\x64\Debug\ParallelImageFiltering.lib and object C:\Users\clhughes\Desktop\ParallelImageFiltering\x64\Debug\ParallelImageFiltering.exp
+image_utils.obj : error LNK2019: unresolved external symbol "bool __cdecl cv::imwrite(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class cv::debug_build_guard::_InputArray const &,class std::vector<int,class std::allocator<int> > const &)" (?imwrite@cv@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV_InputArray@debug_build_guard@1@AEBV?$vector@HV?$allocator@H@std@@@3@@Z) referenced in function "void __cdecl saveImage(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class cv::Mat const &)" (?saveImage@@YAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBVMat@cv@@@Z)
+C:\Users\clhughes\Desktop\ParallelImageFiltering\x64\Debug\ParallelImageFiltering.exe : fatal error LNK1120: 1 unresolved externals
